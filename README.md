@@ -25,13 +25,15 @@ All you need to do is fork this repository, implement all 31 algorithms and send
 Check out our FAQ for more information.
 
 ## Index
-- [**December 1 - The Wave**](#december-1---the-vanishing-number)
+- [**December 01 - The Vanishing Number**](#december-01---the-vanishing-number)
+- [**December 02 - The Wave Sort Challenge**](#december-02---the-wave-sort-challenge)
+- [**December 03 - Alternating Square Arrangement**](#december-03---alternating-square-arrangement)
 - [**FAQ**](#faq)
 
 
 ## Algorithms
 
- ### December 1 - The Vanishing Number
+ ### December 01 - The Vanishing Number
 
    #### Problem Statement
 ```
@@ -65,6 +67,119 @@ Input Format:
 N = 3, array[] = {1,3}
 Result: 2
 ```
+
+### December 02 - The Wave Sort Challenge
+
+   #### Problem Statement
+```
+Imagine you're at a music concert, surrounded by thousands of fans.
+As the music plays, the crowd begins to move in a rhythmic pattern, rising and falling like a wave.
+The energy is contagious, and everyone follows the same wave-like motion.
+Now, think of the crowd as an unsorted array of integers, and your job is to arrange them in such a way that
+the heights of the fans rise and fall, just like the waves at the concert.
+Your task is to organize the array in a similar wave-like fashion!
+```
+
+```
+Sort an array in wave form
+Given an unsorted array of integers, sort the array into a wave array. An array arr[0..n-1] is sorted in wave form if:
+arr[0] >= arr[1] <= arr[2] >= arr[3] <= arr[4] >= ….
+
+```
+![image1](https://github.com/user-attachments/assets/7c46bc27-91f9-4a89-8731-37efa558a939)
+
+
+
+Example 1:
+```
+Input:
+arr[] = {10, 5, 6, 3, 2, 20, 100, 80}
+Output:
+arr[] = {10, 5, 6, 2, 20, 3, 100, 80}
+
+```
+```
+Explanation:
+Here you can see {10, 5, 6, 2, 20, 3, 100, 80}. The first element is larger than the second, and the same pattern repeats again.
+Large element – small element – large element – small element, and so on.
+It can also be in the opposite pattern (small element – large element – small element – large element).
+All you need to maintain is the up-down fashion, which represents a wave. There can be multiple answers.
+
+```
+
+
+Example 2:
+```
+Additional Scenario
+Input:
+arr[] = {1, 2, 3, 4, 5, 6}
+Output:
+arr[] = {2, 1, 4, 3, 6, 5}
+
+```
+```
+Explanation:
+In this case, we swap adjacent elements to form a wave-like array.
+{2, 1, 4, 3, 6, 5} satisfies the condition where elements are alternately large and small.
+
+```
+### December 03 - Alternating Square Arrangement
+
+   #### Problem Statement
+```
+You are given integers ￼ (number of red squares) and ￼ (number of blue squares).
+Your task is to arrange the squares in a sequence such that:
+No two adjacent squares have the same color.
+If it is not possible to create such an arrangement, return "Not possible".
+
+```
+
+```
+Input
+
+Two integers:
+R￼: Number of red squares.
+B￼: Number of blue squares.
+
+Output
+
+A valid arrangement as a string (e.g., "RBRBR" or "BRBRB") that satisfies the condition, or "Not possible" if no valid arrangement exists.
+
+
+```
+
+Sample Input and Output:
+Example 1:
+```
+Input:
+R = 3  
+B = 2  
+
+Output:
+"RBRBR"
+```
+Explanation:
+```
+The sequence "RBRBR" satisfies the condition since no two adjacent squares are the same color.
+```
+
+
+Example 2:
+```
+Input:
+R = 4  
+B = 2  
+
+Output:
+"Not possible"
+```
+Explanation:
+```
+It is impossible to arrange 4 red squares and 2 blue squares without
+having two adjacent squares of the same color. Hence, the output is "Not possible".
+
+```
+
 # FAQ
 #### Who can join the Challenge?
 
